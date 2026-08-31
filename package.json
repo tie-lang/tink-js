@@ -1,0 +1,22 @@
+{
+  "name": "tink-js",
+  "version": "0.1.0",
+  "description": "tink data-flow node frame protocol — universal, language-agnostic.",
+  "main": "tink.js",
+  "types": "tink.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./tink.js",
+      "types": "./tink.d.ts"
+    }
+  },
+  "scripts": {
+    "test": "node --test test_tink.js"
+  },
+  "keywords": ["tink", "tie-lang", "zd", "frame-protocol", "data-flow"],
+  "license": "TIE-LANG-1.1",
+  "engines": {
+    "node": ">=12"
+  }
+}
