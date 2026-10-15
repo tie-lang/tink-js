@@ -10,7 +10,7 @@ len = payload 字节数
 crc = CRC32-IEEE(payload)（多项式 0xEDB88320）
 ```
 
-Mirrors `std/tink.tie` (tie standard library) and the Rust / C / Python tink
+Mirrors `ext/tink.tie` (tie standard library) and the Rust / C / Python tink
 libraries; pure functions over `Uint8Array`, IO (stdin/stdout) left to the
 caller. `frameNext` / `frameSkip` are zero-copy (return views into the input).
 
@@ -47,7 +47,7 @@ tink 帧协议各语言实现（API 语义与校验向量一致）：
 
 | language | library |
 | --- | --- |
-| tie | `std/tink.tie` |
+| tie | `ext/tink.tie` |
 | Rust | `tink-rust`（tink crate） |
 | C | `tink-c`（`tink.h` + `tink.c`） |
 | Python | `tink-python`（`tink.py`） |
